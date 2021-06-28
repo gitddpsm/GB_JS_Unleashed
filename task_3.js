@@ -10,12 +10,12 @@ let box = [
 
 //console.log(box)
 
-function calculate(box) {
+function countBasketPrice(box) {
     return box.reduce(function (summ, boxItem) {
         return summ + boxItem[1] * boxItem[2]
     }, 0);
     //return 'pass'
 }
 
-console.log(calculate(box))
+console.log(countBasketPrice(box))
 
